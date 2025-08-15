@@ -1,0 +1,19 @@
+langchain
+llama-index
+chromadb
+unstructured
+pdfplumber
+python-dotenv
+tqdm
+rich
+langchain pypdf
+-U langchain-community
+tqdm rich
+fastapi==0.112.0
+uvicorn[standard]==0.30.5
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0.post1
+llama-cpp-python
+numpy>=1.23
+pydantic>=2.7
+
