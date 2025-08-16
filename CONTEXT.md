@@ -104,7 +104,7 @@ Options:
 - **GUI** (Streamlit or Gradio)
 - **Metadata filters** (date, source, etc.)
 - **Incremental updates** without full re-ingestion
-
+- **Voice Input**
 ---
 
 ## Example Prompt Template
@@ -133,15 +133,16 @@ Answer:
 ## Milestones
 1. **M1** — Ingest PDFs → FAISS → Query embeddings
 2. **M2** — Integrate local LLM for answering
-3. **M3** — CLI + API interface
-4. **M4** — Optimizations + GUI
+3. **M3** — CLI + API interface + GUI
+4. **M4** — Optimizations
 
 
 # from project root
 pip install -r requirements.txt
 
 # launch API
-uvicorn src.api:app --host 0.0.0.0 --port 8000 --reload
+uvicorn src.api:app --host 127.0.0.1 --port 8000
+uvicorn src.api:app --reload --host 127.0.0.1 --port 8000
 
 # Query
 curl -X POST http://localhost:8000/query \

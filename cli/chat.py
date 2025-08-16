@@ -8,10 +8,10 @@ from rich.progress import Progress, SpinnerColumn, TextColumn
 import time
 
 # ---------------- CONFIG ----------------
-VECTORSTORE_PATH = './data/vectorstore/faiss_index'
-METADATA_PATH = './data/vectorstore/metadata.pkl'
+VECTORSTORE_PATH = '../data/vectorstore/faiss_index'
+METADATA_PATH = '../data/vectorstore/metadata.pkl'
 EMBED_MODEL_NAME = "all-MiniLM-L6-v2"  # Fast embeddings
-LLM_PATH = "./models/llm/Phi-3-mini-4k-instruct-q4.gguf"
+LLM_PATH = "../models/llm/Phi-3-mini-4k-instruct-q4.gguf"
 TOP_K = 3
 # ----------------------------------------
 
@@ -50,7 +50,7 @@ def retrieve_chunks(query, k=3):
 
 def rag_answer(question, k=TOP_K):
     chunks = retrieve_chunks(question, k)
-    context = "\n\n".join(chunks)
+    context = "\n\n".join(chunks)   
 
     prompt = f"""You are an assistant for question-answering tasks. Use the following pieces of retrieved context to answer the question.
     If you don't know the answer, say that "I don't know." DON'T MAKE UP ANYTHING.

@@ -4,8 +4,8 @@ from typing import List, Tuple, Dict
 import torch
 
 # ---------------- CONFIG ----------------
-VECTORSTORE_PATH = './data/vectorstore/faiss_index'
-METADATA_PATH = './data/vectorstore/metadata.pkl'
+VECTORSTORE_PATH = '../data/vectorstore/faiss_index'
+METADATA_PATH = '../data/vectorstore/metadata.pkl'
 EMBED_MODEL = "all-MiniLM-L6-V2"
 # ----------------------------------------
 

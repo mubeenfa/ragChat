@@ -11,9 +11,9 @@ from rich.console import Console    # library for colorful status messages
 
 
 # ---------------- CONFIG ----------------
-DOCS_DIR = './docs'
-VECTORSTORE_PATH = './data/vectorstore/faiss_index'
-METADATA_PATH = './data/vectorstore/metadata.pkl'
+DOCS_DIR = '../docs'
+VECTORSTORE_PATH = '../data/vectorstore/faiss_index'
+METADATA_PATH = '../data/vectorstore/metadata.pkl'
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 150
 EMBED_MODEL = "all-MiniLM-L6-V2"
